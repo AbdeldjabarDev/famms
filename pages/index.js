@@ -9,7 +9,7 @@ import Testimonial from '../components/Testimonial'
 import Link from 'next/link'
 import Footer from '../components/Footer'
 import React from 'react'
-import Carousel from '../components/Carousel'
+
 export default function Home() {
  
   
@@ -72,7 +72,7 @@ export default function Home() {
   <div className='w-fit bg-red-500 shadow-md rounded-sm active:shadow-none px-8 py-2 text-base text-white mt-14 mr-auto ml-auto' ><Link href="/products">View all products</Link></div>
 </section>
 <section>
-  <div className='text-5xl font-semibold font-serif w-fit mr-auto ml-auto mt-10 mb-10 '>Customers's Testimonial</div>
+  <div className='text-5xl font-semibold font-serif w-fit mr-auto ml-auto mt-10 mb-10 '>Customers{" ' "} Testimonial</div>
  <div className='flex flex-row gap-16 w-fit ml-auto mr-auto'>
   <Testimonial name="Olivia Daamsguard" position="CEO at lorem ipsum"></Testimonial>
   <Testimonial name="Cynthia D'Alembert" position="Designer at lorem ipsum" ></Testimonial>
@@ -87,15 +87,7 @@ export default function Home() {
    <button className='w-40 h-fit bg-red-500 pt-3 pb-3 pl-3 rounded-full text-center text-white ml-auto mr-auto shadow-md active:shadow-none font-medium'>Subscribe</button>
   </div>
 </section>
-<Carousel children={[ 
-<div className='w-[288px]  h-80 bg-sky-600'></div>,
-<div className='w-[288px]  h-80 bg-green-600'></div>,
-<div className='w-[288px]  h-80 bg-indigo-600'></div>]}
-  delay="0.8" 
-  interval={3000}
-  
-  >  
-  </Carousel>
+
 <Footer></Footer>
 </div>   
 
